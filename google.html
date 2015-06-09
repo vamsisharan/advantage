@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport"content="width=device-width,intial scale=1.0">
+<title>Insert title here</title>
+<script type="text/javascript"src=https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js></script>
+<script type="text/javascript"src="../js/google.js"></script>
+<link rel="stylesheet"type="text/css" href="../css/google.css">
+</head>
+<body>
+<div id="wrapper">
+<div class="header">
+<img src="../images/google_logo_41.png"class="image" >
+<button id="btn1">sign in</button>
+</div>
+<form name="regis">
+<div>
+<p id="heading">Create your Google Account</p>
+</div>
+<p id="heading1">One account is all you need </p>
+<p id="heading2">A single username and password gets you into everything Google.</p>
+<img src="../images/logo_strip_sign_up_2x.png"class="image1" >
+<p id="heading3">Take it all with you </p>
+<p id="heading4">Switch between devices, and pick up wherever you left off. </p>
+<img src="../images/devices_2x.png"class="image2" >
+<div id="input">
+<label class="lab">Name</label>
+<br>
+<input id="first" ng-model="fname" name="fname" type="email" class="form-control"  placeholder="first">
+<span class="error" ng-show="regis.fname.$touched">You Can't Leave this empty</span>
+<input id="first" type="email" class="form-control"  placeholder="Last">
+
+<label class="lab">Choose your Username</label>
+<input id="mail" type="email" class="form-control"  placeholder="            					       			       @gmail.com">
+
+<label class="lab">Create a password</label>
+<input id="pass" type="password" class="form-control">
+
+<label class="lab">Confirm your password</label>
+<input id="pass1" type="password" class="form-control">
+
+<label class="lab">Birthday</label><br>
+<select id="month"class="form-control">
+<option selected style="display:none">Month</option>
+  <option>January</option>
+  <option>February</option>
+  <option>March</option>
+  <option>April</option>
+  <option>May</option>
+  <option>June</option>
+  <option>July</option>
+  <option>August</option>
+  <option>September</option>
+  <option>October</option>
+  <option>November</option>
+  <option>December</option>
+</select>
+<input id="date" type="text" class="form-control" placeholder="Day">
+<input id="year" type="text" class="form-control" placeholder="year"maxlength="4">
+<label class="lab">Gender</label><br>
+<select id="gender"class="form-control">
+<option selected> Gender</option>
+<option>male</option>
+<option>Female</option>
+</select>
+<input type="checkbox"id="check">
+<p id="pcheck">i agree</p>
+<button id="lbtn">next step</button>
+</div>
+</form>
+</div>
+</body>
+</html>
